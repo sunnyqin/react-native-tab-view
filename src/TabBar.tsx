@@ -394,6 +394,7 @@ export default class TabBar<T extends Route> extends React.Component<
         </Animated.View>
         <View style={styles.scroll}>
           <Animated.ScrollView
+            accessible={false}
             horizontal
             accessibilityRole="tablist"
             keyboardShouldPersistTaps="handled"
